@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #434455;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-align: center;
+  color: #2e2f42;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+p {
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* Header */
+header {
+  max-height: 72px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo-part-studio {
+  color: #2e2f42;
+}
+
+.main-nav .link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: #404bbf;
+}
+
+.main-nav .link:active {
+  text-decoration: underline;
+}
+
+.contact-info {
+  font-style: normal;
+}
+
+.contact-info .contact-link {
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contact-info .contact-link:focus,
+.contact-info .contact-link:hover {
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #2e2f42;
+}
+
+.hero-section .hero-button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-section .hero-button:hover,
+.hero-section .hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* Feature section */
+.feature-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+/* Team section */
+.team {
+  background-color: #f4f4fd;
+}
+
+.team li {
+  background-color: #ffffff;
+}
+
+.team-title {
+  text-transform: capitalize;
+}
+
+.teammate-name {
+  text-align: center;
+}
+
+.teammate-role {
+  text-align: center;
+}
+
+/* Portfolio section */
+.portfolio-title {
+  text-transform: capitalize;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #2e2f42;
+}
+.site-footer .logo-part-studio {
+  color: #f4f4fd;
+}
+.footer-description {
+  color: #f4f4fd;
+}
