@@ -1,8 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: #434455;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -33,6 +50,7 @@ h3 {
 
 p {
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
 a {
@@ -43,11 +61,32 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; /* по центру */
 }
 
 /* Header */
 header {
-  max-height: 72px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 156px;
 }
 
 .logo {
@@ -64,11 +103,25 @@ header {
   color: #2e2f42;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+
+  padding: 24px 24px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 40px;
+}
+
 .main-nav .link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .main-nav .link:hover,
@@ -81,7 +134,14 @@ header {
 }
 
 .contact-info {
-  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Додаємо відстань між елементами, якщо потрібно */
+}
+
+.contact-info ul {
+  display: flex; /* Робимо елементи списку горизонтальними */
+  gap: 40px;
 }
 
 .contact-info .contact-link {
@@ -96,8 +156,20 @@ header {
 }
 
 /* Hero section */
+
 .hero-section {
   background-color: #2e2f42;
+  padding-top: 188px; /* Відстань зверху до хедера */
+  padding-bottom: 292px; /* Відстань знизу до наступної секції */
+}
+
+.hero-section .container {
+  padding-left: 472px; /* Відстань зліва до границі */
+  padding-right: 472px; /* Відстань справа до границі */
+}
+
+.hero-title {
+  margin-bottom: 48px; /* Відстань між заголовком та кнопкою */
 }
 
 .hero-section .hero-button {
@@ -117,6 +189,22 @@ header {
 }
 
 /* Feature section */
+
+.feature .container {
+  padding: 120px 0;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-list li {
+  flex: 1;
+  max-width: none;
+}
+
 .feature-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -126,6 +214,7 @@ header {
 }
 
 /* Team section */
+
 .team {
   background-color: #f4f4fd;
 }
@@ -152,6 +241,14 @@ header {
 }
 
 /* Footer */
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border: 2px solid #c62525;
+}
+
 .site-footer {
   background-color: #2e2f42;
 }
