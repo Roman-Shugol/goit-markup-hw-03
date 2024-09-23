@@ -96,6 +96,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-part-studio {
@@ -105,7 +106,6 @@ section {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 
   padding: 24px 24px;
 }
@@ -194,20 +194,23 @@ section {
   padding: 120px 0;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
-.feature-list li {
-  flex: 1;
-  max-width: none;
+.feature-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .feature-subtitle {
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
