@@ -83,12 +83,12 @@ section {
 
 .page-header .container {
   display: flex;
-  gap: 156px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .logo {
